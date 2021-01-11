@@ -8,213 +8,95 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Product Landing Page</title>
+    <title>Abhishek Dev : Podcasts</title>
+    <link rel="icon" href="media/siteIcon.png" type="image/icon type">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
 <body>
-    <main>
-        <header id="header">
-            <nav id="nav-bar">
-                <div class="first">
-
-                    <img src="./media/siteLogo.png" alt="" id="header-img">
+    <header id="header">
+        <nav id="nav-bar" class="flex justify-between">
+            <div class="left flex">
+                <div class="branding">
+                    <img src="./media/siteLogo.png" alt="site logo" id="header-img">
                 </div>
-                <ul>
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">Products</a></li>
-                    <li class="nav-link"><a href="#">About</a></li>
-                    <li class="nav-link"><a href="#footer">Contact Us</a></li>
-                </ul>
-                <div class="second">
-                    <input type="search" placeholder="Powered by Google !" id="search-box">
-                    <button class="btn1">Search</button>
+                <div class="navigation flex items-center">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#ourServices" class="nav-link">projects</a>
+                    <a href="podcast.html">Podcasts</a>
+                    <a href="#">About Me</a>
                 </div>
-                
-                <p>
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </p>
-                
-            </nav>
-        </header>
-
-        <!-- navigation completed -->
-
-        <!-- main content starts here -->
-
-
+            </div>
+            <div class="right">
+                <button class="btn btn-primary">contact</button>
+            </div>
+        </nav>
+    </header>
+    <section class="podcast flex items-center justify-between">
         <div>
-            <section class="landing">
-                <div class="left">
-                    <h1>Lorem, ipsum <span>lorem</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Quo ullam deleniti repudiandae ad nemo quae id aperiam dignissimos.
-                        Eveniet, quia?
-                    </p>
-                </div>
-                <div class="right">
-                    <div>
-                        <img src="./media/chandrakanta cover.png" alt="">
-                    </div>
+            <img src="./media/chandrakanta cover.jpg" alt="">
+        </div>
+        <div>
+            <h1>CHANDRAKAANTA</h1>
+            <p>
+                CHANDRAKAANTA is a epic fantasy novel written by Babu Devaki Nandan Khatri. One of my fevourite novel.
+                I have narrated in my style so you can listen it in your comfort.
+            </p>
+        </div>
+    </section>
 
-                </div>
-            </section>
+    <div>
+        <div>
+            <img src="media/man2.png" alt="man image">
+        </div>
+        <div>
+
+            <h1>I am a <br><span>Hobbiest.</span></h1>
+            <p>Hi ! I am a hobbiest ; I have many hobbies like skatching,
+                painting & drawing, singing, reading stories and novels etc.
+                Podcasting is one of them.
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <div class="left flex items-center">
+            <img src="./media/icons/gaana.png" alt="">
+        </div>
+    </section>
+
+    <section class="vid-sect">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rUyEwcat2sI" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+
+
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, explicabo aut! Totam iure facilis voluptates eos nemo quidem ullam,
+                veniam quisquam, nisi itaque excepturi,
+                ipsa repellat? Mollitia inventore,
+                veniam ad reprehenderit excepturi,
+                distinctio cupiditate sit ipsum eveniet explicabo aperiam optio.
+            </p>
         </div>
 
-        <!-- video is embeded here -->
+    </section>
 
-        <section class="vid-sect">
-            <div class="emvid">
-                <video src="./media/production.mp4" autoplay muted></video>
-            </div>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rUyEwcat2sI" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Enter your email here" id="email" required>
+        <input type="submit" id="submit">
 
+    </form>
 
-
-                <div class="para">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Officia, explicabo aut! Totam iure facilis voluptates eos nemo quidem ullam,
-                        veniam quisquam, nisi itaque excepturi,
-                        ipsa repellat? Mollitia inventore,
-                        veniam ad reprehenderit excepturi,
-                        distinctio cupiditate sit ipsum eveniet explicabo aperiam optio.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Playlist starts here -->
-        <h2 id="audio-heading">Listen To The Top Episodes here</h2>
-        <section class="aud-sect">
-
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            
-            
-            
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            <div class="card">
-
-                <iframe
-                    src="https://anchor.fm/kahaniyaan/embed/episodes/Season-1-episode-0--About-the-author-of-CHANDRAKAANTA-el05cb/a-a3hbbvf"></iframe>
-
-                <p class="audio-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis laborum eaque eos dolores ratione quos.
-                </p>
-            </div>
-            
-        </section>
-
-        <!-- feedback and contact us form starts here -->
-
-        <h2 id="newsletter">Get It Touch</h2>
-
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-
-            <div>
-                <label for="email">E-mail :</label>
-                <input type="email" placeholder="Enter your email-id" id="email">
-            </div>
-
-            <div>
-                <input type="submit" id="submit">
-            </div>
-
-        </form>
-
-        <!-- footer starts here -->
-
-        <footer id="footer">
-            <p>Copyright &copy; 2020 at abhishek-dev</p>
-        </footer>
-
-    </main>
 </body>
 
 </html>
