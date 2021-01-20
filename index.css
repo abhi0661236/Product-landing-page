@@ -108,7 +108,7 @@ body{
 }
 
 .left .navigation{
-    diplay: flex;
+    display: flex;
 }
 
 .left .navigation a:hover{
