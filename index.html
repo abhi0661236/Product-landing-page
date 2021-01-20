@@ -1,3 +1,14 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -24,11 +35,11 @@
                     <img src="./media/siteLogo.png" alt="site logo" id="header-img">
                 </div>
                 <div class="navigation flex items-center">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#sect1" class="nav-link">Home</a>
+                    <a href="#sect2" class="nav-link">Blog</a>
                     <a href="#ourServices" class="nav-link">projects</a>
-                    <a href="podcast.html">Podcasts</a>
-                    <a href="#">About Me</a>
+                    <a href="#video">Podcasts</a>
+                    <a href="#form">About Me</a>
                 </div>
             </div>
             <div class="right">
@@ -42,7 +53,7 @@
         </div>
         <div>
             <h1>CHANDRAKAANTA</h1>
-            <p>
+            <p id = "sect1">
                 CHANDRAKAANTA is a epic fantasy novel written by Babu Devaki Nandan Khatri. One of my fevourite novel.
                 I have narrated in my style so you can listen it in your comfort.
             </p>
@@ -63,7 +74,7 @@
         </div>
     </div>
 
-    <section>
+    <section id = "sect2">
         <div class="left flex items-center">
             <img src="./media/icons/gaana.png" alt="">
         </div>
@@ -71,7 +82,7 @@
 
     <section class="vid-sect">
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rUyEwcat2sI" frameborder="0"
+        <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/rUyEwcat2sI" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
         </iframe>
@@ -79,7 +90,7 @@
 
 
         <div class="para">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p id = "ourServices">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officia, explicabo aut! Totam iure facilis voluptates eos nemo quidem ullam,
                 veniam quisquam, nisi itaque excepturi,
                 ipsa repellat? Mollitia inventore,
@@ -90,9 +101,9 @@
 
     </section>
 
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
+    <form method = "POST" action="https://www.freecodecamp.com/email-submit" id="form">
         <label for="email">E-mail</label>
-        <input type="email" placeholder="Enter your email here" id="email" required>
+        <input type="email" placeholder="Enter your email here" id="email" name = "email" required>
         <input type="submit" id="submit">
 
     </form>
